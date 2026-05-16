@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html, body{
+
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: #5097a0; */
+    background: linear-gradient(to right, rgb(38, 103, 105),rgb(78, 143, 153), rgb(3, 89, 110))
+
+}
+#game-div{
+    width: 80%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 15px;
+}
+#paneltop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20%;
+    width: 100%;
+    height: 10%;
+    background-color: #083035;
+}
+.element{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.box{
+    background-color: rgb(255, 255, 255);
+    color:#083035;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#panelbottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100% - 10%);
+    padding: 20px;
+}
+.bubble{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    color: white;
+    height: 30px;
+    padding: 22px;
+    background-color: #083035;
+    border-radius: 50%;
+}
+.bubble:hover{
+    background-color: #105c66;
+    color: white;
+    cursor: pointer;
+}
